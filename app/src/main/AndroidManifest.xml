@@ -10,21 +10,12 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".Main2Activity" />
-        <activity android:name=".Activity0202">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".Activity0203RelativeLayout">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".Activity0202"></activity>
+        <activity android:name=".Activity0203RelativeLayout"></activity>
         <activity android:name=".ActivityProgressBar">
+
+        </activity>
+        <activity android:name=".ActivityScrollView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
