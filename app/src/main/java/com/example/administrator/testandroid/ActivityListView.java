@@ -24,7 +24,7 @@ public class ActivityListView extends Activity {
         ArrayAdapter<String> arrayAdapter =
                 new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,items);
         listView.setAdapter(arrayAdapter);
-       listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //textView2.setText(""+position+" "+items[position]);

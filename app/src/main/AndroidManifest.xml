@@ -12,10 +12,16 @@
         <activity android:name=".Main2Activity" />
         <activity android:name=".Activity0202" />
         <activity android:name=".Activity0203RelativeLayout" />
-        <activity android:name=".ActivityProgressBar"></activity>
-        <activity android:name=".ActivityScrollView">
-        </activity>
+        <activity android:name=".ActivityProgressBar" />
+        <activity android:name=".ActivityScrollView"></activity>
         <activity android:name=".ActivityListView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityListView2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
