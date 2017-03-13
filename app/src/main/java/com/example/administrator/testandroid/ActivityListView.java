@@ -3,8 +3,10 @@ package com.example.administrator.testandroid;
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.TextDirectionHeuristic;
+import android.util.SparseBooleanArray;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -22,11 +24,17 @@ public class ActivityListView extends Activity {
         textView2 = (TextView)findViewById(R.id.textView2);
         listView = (ListView)findViewById(R.id.listView);
         ArrayAdapter<String> arrayAdapter =
-                new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,items);
+                new ArrayAdapter<String>(this,android.R.layout.simple_list_item_multiple_choice,items);
         listView.setAdapter(arrayAdapter);
+        listView.setChoiceMode(AbsListView.CHOICE_MODE_MULTIPLE);
+        SparseBooleanArray sba = listView.getCheckedItemPositions();
+        for(int i=0;i<sba.size();i++){
+            int p=sba.keyAt(i);
+        }
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                 //textView2.setText(""+position+" "+items[position]);
                 //textView2.setText(""+position+" "+((TextView)view).getText());
                 //textView2.setText(((TextView)liestViw.getChildAt(position)).getText());
