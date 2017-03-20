@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add"
+        android:title="add"
+        android:showAsAction="always"
+        android:icon="@mipmap/ic_launcher"/>
+    <item android:id="@+id/reset"
+        android:title="reset"
+        android:showAsAction="always"
+        android:icon="@mipmap/ic_launcher"/>
+    <item android:id="@+id/about"
+        android:title="about"
+        android:showAsAction="ifRoom"
+        />
+</menu>

@@ -14,12 +14,18 @@
         <activity android:name=".Activity0203RelativeLayout" />
         <activity android:name=".ActivityProgressBar" />
         <activity android:name=".ActivityScrollView" />
-        <activity android:name=".ActivityListView"></activity>
+        <activity android:name=".ActivityListView" />
         <activity android:name=".ActivityListView2" />
-        <activity android:name=".ActivitySimpleAdapter"></activity>
-        <activity android:name=".ActivitySpinner">
-        </activity>
+        <activity android:name=".ActivitySimpleAdapter" />
+        <activity android:name=".ActivitySpinner"></activity>
         <activity android:name=".ActivityGridView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
