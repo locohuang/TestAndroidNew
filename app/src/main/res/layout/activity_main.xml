@@ -50,5 +50,24 @@
             android:gravity="center"
             />
     </LinearLayout>
-
+    <Button
+        android:text="Next"
+        android:onClick="next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="web"
+        android:onClick="web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="call"
+        android:onClick="call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:text="myapp"
+        android:onClick="app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>
