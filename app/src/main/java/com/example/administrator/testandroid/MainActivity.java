@@ -10,6 +10,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 public class MainActivity extends Activity {
     private TextView tv;
     private EditText et;
@@ -43,5 +47,33 @@ public class MainActivity extends Activity {
         Intent intent = new Intent();
         intent.setClassName("com.example.administrator.my2","com.example.administrator.my2.MainMy");
         startActivity(intent);
+    }
+    public void go(View view){
+        Intent intent = new Intent(this,ActivityB.class);
+        intent.putExtra("myInt",20);
+        intent.putExtra("myStr","工贸");
+        int[] intArray = new int[]{1,2,3,4,5};
+        intent.putExtra("myArray",intArray);
+        ArrayList<String> arrayList = new ArrayList<>();
+        arrayList.add("abc");
+        arrayList.add("bcd");
+        arrayList.add("cde");
+        intent.putStringArrayListExtra("myList",arrayList);
+
+        //intent.putExtra("myMap",map);
+        User user = new User(1001,"zhang");
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("myUser",user);
+
+        MyMap myMap = new MyMap();
+        Map<String,String> map = new HashMap<>();
+        map.put("mkey1","guangzhou");
+        map.put("mkey2","beijing");
+        myMap.setMap(map);
+        intent.putExtra("myMap",myMap);
+        //bundle.putSerializable("myMap",myMap);
+        intent.putExtras(bundle);
+        startActivity(intent);
+        //finish();
     }
 }
