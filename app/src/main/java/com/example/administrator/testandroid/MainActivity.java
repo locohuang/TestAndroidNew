@@ -13,7 +13,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-
+import com.example.administrator.testandroid.model.User2;
 public class MainActivity extends Activity {
     private TextView tv;
     private EditText et;
@@ -75,5 +75,14 @@ public class MainActivity extends Activity {
         intent.putExtras(bundle);
         startActivity(intent);
         //finish();
+    }
+    public void go2(View view){
+        Intent intent = new Intent(this,ActivityB.class);
+        User2 user = new User2(1001,"zhang");
+        intent.putExtra("myUser",user);
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("my1",user);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }

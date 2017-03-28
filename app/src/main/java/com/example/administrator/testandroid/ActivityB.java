@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.administrator.testandroid.model.User2;
+
 import java.util.ArrayList;
 
 public class ActivityB extends Activity {
@@ -38,5 +40,11 @@ public class ActivityB extends Activity {
         MyMap myMap = (MyMap)intent.getSerializableExtra("myMap");
         if(null!=myMap)
             System.out.println("map:"+myMap.getMap().get("mkey1")+"   "+myMap.getMap().get("mkey2"));
+
+        User2 user2 = getIntent().getParcelableExtra("myUser");
+        if(null!=user2){
+            System.out.println(user2.getId()+ "   "+user2.getName() );
+        }
+        User2 user1 = getIntent().getExtras().getParcelable("my1");
     }
 }
