@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.administrator.testandroid.ActivityB">
+    tools:context="com.example.administrator.testandroid.ActivityC">
     <TextView
-        android:text="B"
+        android:text="C"
         android:layout_width="match_parent"
         android:layout_height="50dp" />
     <Button
-        android:text="C"
+        android:text="D"
         android:onClick="go"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

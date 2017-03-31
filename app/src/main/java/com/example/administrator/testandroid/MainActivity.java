@@ -49,7 +49,7 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
     public void go(View view){
-        Intent intent = new Intent(this,ActivityB.class);
+        Intent intent = new Intent(this,ActivityRB.class);
         intent.putExtra("myInt",20);
         intent.putExtra("myStr","工贸");
         int[] intArray = new int[]{1,2,3,4,5};
@@ -77,7 +77,7 @@ public class MainActivity extends Activity {
         //finish();
     }
     public void go2(View view){
-        Intent intent = new Intent(this,ActivityB.class);
+        Intent intent = new Intent(this,ActivityRB.class);
         User2 user = new User2(1001,"zhang");
         intent.putExtra("myUser",user);
         Bundle bundle = new Bundle();
