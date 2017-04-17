@@ -17,7 +17,7 @@
         <activity android:name=".ActivityListView" />
         <activity android:name=".ActivityListView2" />
         <activity android:name=".ActivitySimpleAdapter" />
-        <activity android:name=".ActivitySpinner"></activity>
+        <activity android:name=".ActivitySpinner" />
         <activity android:name=".ActivityGridView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +32,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityNext"/>
+        <activity android:name=".ActivityNext" />
+        <activity android:name=".ActivityFile">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
